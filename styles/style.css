@@ -1,15 +1,9 @@
 @import url('pimp_my_tag.css');
 
 div {
-    /* Relative: The element is positioned relative to its normal position */
-    /* in simple words, it is like static, elements render in order, as they appear in the html document */
-    /* but you can move it around using left, right, top and bottom all this "relative" to its position */
-    /* it will leave a white space where it is supposed to be in first place. */
+    /* Absolute, The element is positioned relative to its first positioned (not static) ancestor element */
 
-    /* Block is the default display property */
-    /* Displays an element as a block that pulls down the other elements */
-
-    position: relative;
+    position: absolute;
     display: block;
-    right: -100px;
+    left: 100px;
 }

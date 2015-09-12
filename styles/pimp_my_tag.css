@@ -13,7 +13,7 @@ div {
 }
 
 .big::after {
-    content: "<-- display: block";
+    content: "<-- All divs elements are overlapping each other";
     white-space: nowrap;
     position: relative;
     right: -110px;
@@ -26,13 +26,13 @@ div {
     background-color: #3436AC;
 }
 
-.small::after {
+/*.small::after {
     content: "<-- display: block";
     white-space: nowrap;
     position: relative;
     right: -55px;
     top: 25px;
-}
+}*/
 
 h1 {
     width: 80%;
