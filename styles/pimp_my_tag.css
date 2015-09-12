@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+}
+
+div {
+    border: 1px solid #000;
+}
+
+.big {
+    width: 130px;
+    height: 130px;
+    background-color: #72AC83;
+}
+
+.big::after {
+    content: "<-- display: block";
+    white-space: nowrap;
+    position: relative;
+    right: -110px;
+    top: 50px;
+}
+
+.small {
+    width: 75px;
+    height: 75px;
+    background-color: #3436AC;
+}
+
+.small::after {
+    content: "<-- display: block";
+    white-space: nowrap;
+    position: relative;
+    right: -55px;
+    top: 25px;
+}
+
+h1 {
+    width: 80%;
+    margin: auto;
+}
