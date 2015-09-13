@@ -1,9 +1,18 @@
-body {
-    text-align: center;
-}
-
 div {
     border: 1px solid #000;
+}
+
+.InlineBlock::after{
+    content: "" !important;
+}
+
+div:nth-child(7)::after{
+    content: "<-- display: inline-block" !important;
+    white-space: nowrap;
+    position: relative;
+    right: -55px;
+    top: 25px;
+    color: red;
 }
 
 .big {
@@ -13,7 +22,7 @@ div {
 }
 
 .big::after {
-    content: "<-- All divs elements are overlapping each other";
+    content: "<-- display: block";
     white-space: nowrap;
     position: relative;
     right: -110px;
@@ -26,15 +35,16 @@ div {
     background-color: #3436AC;
 }
 
-/*.small::after {
+.small::after {
     content: "<-- display: block";
     white-space: nowrap;
     position: relative;
     right: -55px;
     top: 25px;
-}*/
+}
 
 h1 {
+    text-align: center;
     width: 80%;
     margin: auto;
 }

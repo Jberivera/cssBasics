@@ -1,9 +1,12 @@
 @import url('pimp_my_tag.css');
 
 div {
-    /* Absolute, The element is positioned relative to its first positioned (not static) ancestor element */
-
-    position: absolute;
+    position: relative;
     display: block;
     left: 100px;
+}
+
+.InlineBlock {
+    /* inline-block elements are like inline elements but they can have a width and a height. */
+    display: inline-block;
 }
